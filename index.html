@@ -1,1 +1,113 @@
-Hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luma - Natural Skincare</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Luma</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="cart-icon">
+        <img src="https://i.pinimg.com/736x/11/24/15/1124156db7902d82d36d506cfc910423.jpg" alt="Cart">
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Embrace Your Natural Glow</h1>
+      <p>Experience the magic of nature with our skincare products.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="products" class="product-section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/94/2e/f8/942ef87c73c5355b8bd6ba7317386fb8.jpg" alt="Herbal Face Cream">
+        <h3>Herbal Face Cream</h3>
+        <p>₹1,999</p>
+        <button onclick="addToCart('Herbal Face Cream')">Add to Cart</button>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/2d/cd/68/2dcd681dd65a90a4df0f7aef0e84718f.jpg" alt="Organic Body Lotion">
+        <h3>Organic Body Lotion</h3>
+        <p>₹1,499</p>
+        <button onclick="addToCart('Organic Body Lotion')">Add to Cart</button>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/bf/7c/6e/bf7c6e6e2c26893701beaf62e8e0a55d.jpg" alt="Rose Water Toner">
+        <h3>Rose Water Toner</h3>
+        <p>₹799</p>
+        <button onclick="addToCart('Rose Water Toner')">Add to Cart</button>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/9c/a5/68/9ca568401b32be77c91a2c7b6e854002.jpg" alt="Aloe Vera Gel">
+        <h3>Aloe Vera Gel</h3>
+        <p>₹599</p>
+        <button onclick="addToCart('Aloe Vera Gel')">Add to Cart</button>
+      </div>
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/b3/35/eb/b335ebaf94d8c5d845e05cbc0352513f.jpg" alt="Vitamin C Serum">
+        <h3>Hydrating Mint Serum</h3>
+        <p>₹2,199</p>
+        <button onclick="addToCart('Vitamin C Serum')">Add to Cart</button>
+      </div>
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/61/6a/b6/616ab676331f5933640b4e9c079ac36b.jpg" alt="Charcoal Face Mask">
+        <h3>Charcoal Face Mask</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Charcoal Face Mask')">Add to Cart</button>
+      </div>
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/03/dd/22/03dd22a81a16310534f773210c242869.jpg" alt="Green Tea Face Wash">
+        <h3>Green Tea Face Wash</h3>
+        <p>₹349</p>
+        <button onclick="addToCart('Green Tea Face Wash')">Add to Cart</button>
+      </div>
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="https://i.pinimg.com/736x/85/55/82/85558297951af190518d7f844b8c3dc9.jpg" alt="Coconut Body Butter">
+        <h3>Coconut Body Butter</h3>
+        <p>₹1,249</p>
+        <button onclick="addToCart('Coconut Body Butter')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>At Luma, we are committed to providing eco-friendly, cruelty-free, and all-natural skincare products that rejuvenate your skin while protecting the planet.</p>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Luma. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
